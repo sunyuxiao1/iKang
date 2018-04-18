@@ -9,7 +9,8 @@
 			      :class = "[(activeIndex === index ? item.classb : item.classa)]"
 			    
 			  	   ></i></dt>
-			  <dd>{{item.title}}</dd>
+			  <dd class="iconfont " 
+			  	  @click = "activeIndex= index">{{item.title}}</dd>
 	  	  </router-link>
 	  </dl>
 	
@@ -37,7 +38,7 @@ export default{
  
   },
   created:function(){
-  	this.activeIndex++
+  	this.activeIndex++;
   },
 
   
@@ -54,15 +55,19 @@ export default{
 	border-top: 1px solid #f1f1f1 ;
 	div{
 		display:flex;
-		justify-content: space-around;
-		
-		
+		justify-content: space-between;
+		overflow: hidden;
+		width:92%;
 		color:#848484;
 		dl{
 			 text-align: center;
+			 width:100%;
+			 
 			dd{
 				text-align:center;
 			    font-size:16px;
+			   
+			    
 			}
 			
 			i{

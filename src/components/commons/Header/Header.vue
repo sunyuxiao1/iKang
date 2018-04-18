@@ -8,7 +8,7 @@
 	    <span><img src="../../../assets/logo.png" alt="" /></span>
 	    <span>
 	    	<i class="iconfont icon-fenlei"></i>
-	    	<i class="iconfont icon-xiaoxi"></i>
+	    	<i class="iconfont icon-iconfontzhizuobiaozhun023110"></i>
 	    </span>
   	
   </header>
@@ -22,13 +22,14 @@ export default{
 
 <style scoped lang="scss">
 	.app-header{
-		width:100%;
+		overflow: hidden;
+		width:90%;
 		height:0.44rem;
 		background:#fafafa;
 		display:flex;
 		justify-content: space-around;
-	    line-height: 0.44rem;
-	    align-items: center;
+	   line-height: 0.44rem;
+	   align-items: center;
 	   img{
 	   	width:1.17rem;
 	   	height:0.27rem;
