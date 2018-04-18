@@ -1,5 +1,5 @@
 <template>
-	<footer class="app-footer">
+	<footer class="app-footer" v-if="show">
 	<div>
 	  <dl v-for="(item,index) in className" :key="item.id"  >
 	  	  <router-link :to="{name:item.name}" >
@@ -25,8 +25,9 @@ export default{
   data:function(){
   	  return {
   	  	 activeIndex:-1,
+  	  	 show:true,
   	  	className:[
-  	  	    {id:1,title:'首页',classa:'icon-shouye2',classb:'icon-shouye1 color ',name:'home'},
+  	  	    {id:1,title:'首页',classa:'icon-shouye2',classb:'icon-shouye color ',name:'home'},
   	  	     {id:2,title:'分院',classa:'icon-yiyuanzixunkaobei',classb:'icon-yiyuanzixun-tianchong color'},
   	  	      {id:3,title:'热销',classa:'icon-huobao',classb:'icon-huo color',name:'hot'},
   	  	       {id:4,title:'报告',classa:'icon-huanzhebaogao',classb:'icon-huanzhebaogao1 color'},
@@ -40,9 +41,14 @@ export default{
   created:function(){
   	this.activeIndex++;
   },
-
+  mounted:function(){
+  	console.log(this.$router)
+	  	
+	    this.$router.push('/')
+	   
+    }
   
-  }
+}
   
 
 </script>
@@ -52,13 +58,17 @@ export default{
 	width:100%;
 	height:0.52rem;
 	background:#fafafa;
-	border-top: 1px solid #f1f1f1 ;
+	border-top: 1px solid #f1f1f1;
+	
 	div{
 		display:flex;
 		justify-content: space-between;
+		align-items: center;
+		
 		overflow: hidden;
-		width:92%;
+		width:95%;
 		color:#848484;
+		height:0.52rem;
 		dl{
 			 text-align: center;
 			 width:100%;

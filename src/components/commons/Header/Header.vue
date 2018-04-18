@@ -16,14 +16,14 @@
 
 <script>
 export default{
-  name: 'AppHeader'
+  name:'AppHeader'
 }
 </script>
 
 <style scoped lang="scss">
 	.app-header{
 		overflow: hidden;
-		width:90%;
+		width:100%;
 		height:0.44rem;
 		background:#fafafa;
 		display:flex;

@@ -4,6 +4,9 @@ import './stylesheets/main.scss'
 import './modules/rem'
 import Vue from 'vue'
 import App from './App'
+import 'animate.css'
+ import axios from 'axios'
+ Vue.prototype.$http=axios
 //  生产提示改成true不提示
 Vue.config.productionTip = false
 
@@ -16,5 +19,6 @@ new Vue({
   components: { App },
   router,
   //  相当于将el替换成app组件
-  template: '<App/>'
+  template: '<App/>',
+  
 })

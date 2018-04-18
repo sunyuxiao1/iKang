@@ -1,12 +1,16 @@
 <template>
    <div class="hot">
-   hot
+   	hot
+ 
   </div>
 </template>
 
 <script>
-	export default{
-  name: 'Hot'
+
+export default{
+  name: 'Hot',
+  
+ 
 }
 </script>
 
