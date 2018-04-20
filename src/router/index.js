@@ -8,6 +8,9 @@ const router = new VueRouter({
 	     {path:'',redirect:'/home'},
 	     {path:'/home',name:'home',component:Home},
 	     {path:'/hot',name:'hot',component:Hot}
-	]
+	],
+	scrollBehavior (to, from, savedPosition) {
+     return { x: 0, y: 0 }
+    }
 })
 export default router

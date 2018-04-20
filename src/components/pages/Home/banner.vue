@@ -34,7 +34,7 @@ export default{
   	Vue.nextTick(()=>{
   		new Swiper('.banner',{
   			autoplay: {
-			    delay: 1000,
+			    delay: 3000,
 			    stopOnLastSlide: false,
 			    disableOnInteraction: true,
 			   },

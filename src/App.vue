@@ -1,7 +1,8 @@
 <template>
   <div id="app">
    
-  
+  <app-header></app-header>
+  <div class="clearboth"></div>
  
 <transition leave-active-class="animated slideOutRight"
 	           enter-active-class="animated fadeIn"
@@ -20,10 +21,11 @@
 <script>
 	
 import AppFooter from './components/commons/Footer/Footer.vue'
+import AppHeader from './components/commons/Header/Header.vue'
 export default {
   name: 'App',
  components:{
- 	AppFooter
+ 	AppFooter,AppHeader
  }
 }
 </script>

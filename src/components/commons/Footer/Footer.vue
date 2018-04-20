@@ -42,7 +42,6 @@ export default{
   	this.activeIndex++;
   },
   mounted:function(){
-  	console.log(this.$router)
 	  	
 	    this.$router.push('/')
 	   
@@ -59,6 +58,8 @@ export default{
 	height:0.52rem;
 	background:#fafafa;
 	border-top: 1px solid #f1f1f1;
+	position:fixed;
+	bottom:0;
 	
 	div{
 		display:flex;
