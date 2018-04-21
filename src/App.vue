@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+
   	 <router-view>
 					<transition leave-active-class="animated slideOutRight"
 						           enter-active-class="animated fadeIn"
@@ -13,11 +14,16 @@
 	
   
   
+
+    
+    
+
   </div>
 </template>
 
 <script>
 	
+
 import AppFooter from './components/commons/Footer/Footer.vue'
 
 export default {
@@ -25,5 +31,17 @@ export default {
  components:{
  	AppFooter
  }
+
+
+ 
+	
+	
+	
+
+
 }
 </script>
+
+<style lang="scss">
+	
+</style>
