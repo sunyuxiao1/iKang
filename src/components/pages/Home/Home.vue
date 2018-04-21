@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-  	 
-  	 
+  	   
+  	   <app-header></app-header>
 	  	 <banner></banner>
 	  	 <app-nav></app-nav>
 	  	 <nav-list></nav-list>
@@ -20,12 +20,13 @@ import NavList from './NavList'
 import Current from './Current'
 import HomeContent from './HomeContent'
 import Record from './Record'
+import AppHeader from '../../commons/Header/Header.vue'
 export default{
   name: 'Home',
 
   
   components:{
-  	Banner,AppNav,NavList,Current,HomeContent,Record
+  	Banner,AppNav,NavList,Current,HomeContent,Record,AppHeader
   }
 }
 </script>

@@ -35,14 +35,14 @@ export default{
      },
      methods:{
      	getlistitem(){
-     		this.$http('/static/json/navlist.json').then(res=>{
+     		this.$http.get('/static/json/navlist.json').then(res=>{
      			 this.listitems=res.data;
      			 
      		})
      	},
      	getimg(){
      		//https://ikapp.health.ikang.com
-     		this.$http('http://localhost:8080/ik/appService/v2/main/quickTag')
+     		this.$http.get('http://localhost:8080/ik/appService/v2/main/quickTag?__t='+Date.now())
      		.then(res=>{
      			this.listimgs=res.data.results
 

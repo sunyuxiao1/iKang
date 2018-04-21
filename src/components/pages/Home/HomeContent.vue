@@ -46,8 +46,6 @@ export default{
      		this.$http('http://localhost:8080/ik/appService/v2/product/homeProduct')
      		.then(res=>{
      			this.listcontents=res.data.results;
-     			console.log(this.listcontents)
-
      		})
      	}
      	

@@ -7,7 +7,9 @@
 		    </div>
 		    <span><img src="../../../assets/logo.png" alt="" /></span>
 		    <span>
+		    	<router-link to="/classify">
 		    	<i class="iconfont icon-fenlei"></i>
+		    	</router-link>
 		    	<i class="iconfont icon-iconfontzhizuobiaozhun023110"></i>
 		    </span>
   	</div>
@@ -16,6 +18,7 @@
 </template>
 
 <script>
+	import router from '../../../router'
 export default{
   name:'AppHeader'
 }

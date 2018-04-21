@@ -39,7 +39,7 @@ export default{
      	getcurrents(){
      		
      		//https://ikapp.health.ikang.com/appService/v2/banner/news/list?currentPage=1&pageSize=5
-     		this.$http('/ik/appService/v2/banner/news/list')
+     		this.$http.get('/ik/appService/v2/banner/news/list')
      		.then(res=>{
      			this.currents=res.data.results
 

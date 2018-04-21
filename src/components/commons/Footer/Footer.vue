@@ -1,5 +1,5 @@
 <template>
-	<footer class="app-footer" v-if="show">
+	<footer class="app-footer">
 	<div>
 	  <dl v-for="(item,index) in className" :key="item.id"  >
 	  	  <router-link :to="{name:item.name}" >
@@ -25,11 +25,10 @@ export default{
   data:function(){
   	  return {
   	  	 activeIndex:-1,
-  	  	 show:true,
   	  	className:[
   	  	    {id:1,title:'首页',classa:'icon-shouye2',classb:'icon-shouye color ',name:'home'},
   	  	     {id:2,title:'分院',classa:'icon-yiyuanzixunkaobei',classb:'icon-yiyuanzixun-tianchong color'},
-  	  	      {id:3,title:'热销',classa:'icon-huobao',classb:'icon-huo color',name:'hot'},
+  	  	      {id:3,title:'热销',classa:'icon-huobao',classb:'icon-huo color'},
   	  	       {id:4,title:'报告',classa:'icon-huanzhebaogao',classb:'icon-huanzhebaogao1 color'},
   	  	        {id:5,title:'我的',classa:'icon-wode',classb:'icon-weibiaoti-_huabanfuben color'}
   	  	]
