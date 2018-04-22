@@ -1,15 +1,15 @@
 <template>
   <div id="app">
 
-  	 <router-view>
-					<transition leave-active-class="animated slideOutRight"
+  	     
+				   <transition leave-active-class="animated slideOutRight"
 						           enter-active-class="animated fadeIn"
 						           mode = "out-in" >
-						   
-					    <router-view ></router-view>
-					</transition>
-					
-			</router-view>
+						    <router-view > </router-view>
+					  
+				   	</transition>
+				
+			
 					<app-footer></app-footer>
 	
   

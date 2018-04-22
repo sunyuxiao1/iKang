@@ -7,20 +7,17 @@
     margin:0 auto;
     display:flex;
  }   
-   
-
-//公共样式
-
-.page {
-    margin-top: 46px;
-}
-input{
-    border: none;
-}
+   //公共样式
 .local{
     position: absolute;
     left: 0;
     top: 80px;
     width: 100%;
 
+}
+.branchpage {
+    margin-top: 46px;
+}
+input{
+    border: none;
 }

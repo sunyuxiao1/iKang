@@ -27,7 +27,7 @@ export default{
   	  	 activeIndex:-1,
   	  	className:[
   	  	    {id:1,title:'首页',classa:'icon-shouye2',classb:'icon-shouye color ',name:'home'},
-  	  	     {id:2,title:'分院',classa:'icon-yiyuanzixunkaobei',classb:'icon-yiyuanzixun-tianchong color'},
+  	  	     {id:2,title:'分院',classa:'icon-yiyuanzixunkaobei',classb:'icon-yiyuanzixun-tianchong color',name:'branch'},
   	  	      {id:3,title:'热销',classa:'icon-huobao',classb:'icon-huo color'},
   	  	       {id:4,title:'报告',classa:'icon-huanzhebaogao',classb:'icon-huanzhebaogao1 color'},
   	  	        {id:5,title:'我的',classa:'icon-wode',classb:'icon-weibiaoti-_huabanfuben color'}
@@ -59,6 +59,7 @@ export default{
 	border-top: 1px solid #f1f1f1;
 	position:fixed;
 	bottom:0;
+	left:0;
 	
 	div{
 		display:flex;

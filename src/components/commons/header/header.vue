@@ -10,7 +10,9 @@
 		    	<router-link to="/classify">
 		    	<i class="iconfont icon-fenlei"></i>
 		    	</router-link>
-		    	<i class="iconfont icon-iconfontzhizuobiaozhun023110"></i>
+		    	<router-link to="/login">
+		    	    <i class="iconfont icon-iconfontzhizuobiaozhun023110"></i>
+		    	</router-link>
 		    </span>
   	</div>
   	<div class="clearboth"></div>
@@ -32,8 +34,9 @@ export default{
 				height:0.44rem;
 				background:#fafafa;
 				display:flex;
-				 position: fixed;
+				 position:fixed;
 				 top:0;
+				 left:0;
 				 z-index:999;
 				 justify-content: space-around;
 			   line-height: 0.44rem;

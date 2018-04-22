@@ -2,31 +2,30 @@
   <div class="home">
   	   
   	   <app-header></app-header>
-	  	 <banner></banner>
-	  	 <app-nav></app-nav>
-	  	 <nav-list></nav-list>
-  	   <current></current>
-  	   <home-content></home-content>
-  	   <record></record>
+  	   <app-nav></app-nav>
+				<banner></banner>
+				<nav-list></nav-list>
+				<current></current>
+				<home-content></home-content> 	
+				<record></record>
 	   
   </div>
 </template>
 
 <script>
 
+
+import AppHeader from '../../commons/Header/Header.vue'
 import AppNav from './Nav.vue'
 import Banner from './Banner.vue'
 import NavList from './NavList'
 import Current from './Current'
 import HomeContent from './HomeContent'
 import Record from './Record'
-import AppHeader from '../../commons/Header/Header.vue'
 export default{
   name: 'Home',
-
-  
-  components:{
-  	Banner,AppNav,NavList,Current,HomeContent,Record,AppHeader
+ components:{
+  	AppHeader,	Banner,AppNav,NavList,Current,HomeContent,Record
   }
 }
 </script>
@@ -35,7 +34,7 @@ export default{
 
    .home{
    	
-   		overflow:scroll;
+   		
    	  flex:1;
    
    }

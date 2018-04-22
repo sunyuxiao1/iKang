@@ -69,7 +69,7 @@ export default{
 		  display: flex;
 	  	  flex-direction:column;	  	 
           display:flex;
-          padding-right:10px;
+          padding-right:0.2rem;
           
 	  	  .contenttop{
 	  	  	width:100%;
